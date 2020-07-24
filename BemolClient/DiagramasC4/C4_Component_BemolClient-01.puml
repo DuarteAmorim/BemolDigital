@@ -1,0 +1,27 @@
+@startuml
+'!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+' uncomment the following line and comment the first to use locally
+!include Base\C4_Component.puml
+
+'LAYOUT_WITH_LEGEND
+
+title Componente: Formulário de cadastro de Cliente
+
+Container(frmCadCli, "Fórmulário de cadastro de Cliente", "C#, Windows Forms", "Contempla todas as funcionalidades para realizar o cadastro do cliente.")
+
+ContainerDb(db, "Database", "Relational Database Schema", "Persiste os dados do cliente.")
+System_Ext(viaCepWS, "Webservice ViaCEP", "Informa detalhes do CEP consultado.")
+
+Container_Boundary(api, "Persistência do Cliente") {
+    Component(clienteCtl, "Entidade Cliente", "DDD", "Gerencia os serviços possíveis para a entidade")
+    Component(apiCep, "API FindCEP", "Web API", "Realiza as requisições de consumo o WebService ViaCEP.")
+
+    Rel(clienteCtl, db, "Leitura & Escrita em", "SQL Server Provider")
+    Rel(apiCep, viaCepWS, "Get", "Async, HTTPS")
+    Rel_Back(apiCep, viaCepWS, "Response", "JSON")
+}
+
+Rel(frmCadCli, clienteCtl, "Utiliza")
+Rel(frmCadCli, apiCep, "Utiliza")
+
+@enduml

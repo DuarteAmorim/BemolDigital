@@ -1,0 +1,22 @@
+@startuml "techtribesjs"
+'!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+' uncomment the following line and comment the first to use locally
+!include Base\C4_Container.puml
+
+'LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+LAYOUT_LEFT_RIGHT
+title Container: Cadastro de Cliente
+
+Person(funcionario, "Funcionário")
+
+System_Boundary(c1, "Container: Cadastro de Cliente"){
+    Container(winform, "Windows Forms Application", "C#, Web API REST, EF Core 3.1.6", "Permite o funcionário preencher dados necessárioas para incluir/alterar clientes")
+    ContainerDb(rel_db, "Banco de Dados Relacional", "SQL Server Express 2017", "Inclui e altera dados do Cliente")
+}
+
+Rel(funcionario, winform, "Utiliza", "formulário")
+Rel(winform, rel_db, "Persistência")
+
+@enduml

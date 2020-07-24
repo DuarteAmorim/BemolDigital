@@ -1,0 +1,19 @@
+@startuml
+'!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+!include Base\C4_Context\C4_Context.puml
+
+LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+'LAYOUT_LEFT_RIGHT
+title Diagrama de Contexto do sistema BemolClient
+
+Person(funcionario, "Funcionário", "Funcionário da empresa, que cadastra e altera dados do Cliente")
+
+System_Boundary(c0, " "){
+    System(sistema, "Cadastro de Clientes", "Permite que sejam persistidas informações de clientes (novos ou já existentes)")
+}
+
+Rel(funcionario, sistema, "Cadastra, altera Clientes")
+@enduml
