@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Case01", "Case01", "{9A60A3E0-E7CC-472E-821D-4028AFE80C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindCep", "FindCep\FindCep.csproj", "{4028E584-11B5-421A-812E-A4BB5B1764B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bemol01App", "Bemol01App\Bemol01App.csproj", "{D18A72F2-FB3C-4164-94DB-3F5F58FC35EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4028E584-11B5-421A-812E-A4BB5B1764B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4028E584-11B5-421A-812E-A4BB5B1764B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4028E584-11B5-421A-812E-A4BB5B1764B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4028E584-11B5-421A-812E-A4BB5B1764B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18A72F2-FB3C-4164-94DB-3F5F58FC35EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18A72F2-FB3C-4164-94DB-3F5F58FC35EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18A72F2-FB3C-4164-94DB-3F5F58FC35EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18A72F2-FB3C-4164-94DB-3F5F58FC35EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4028E584-11B5-421A-812E-A4BB5B1764B3} = {9A60A3E0-E7CC-472E-821D-4028AFE80C11}
+		{D18A72F2-FB3C-4164-94DB-3F5F58FC35EB} = {9A60A3E0-E7CC-472E-821D-4028AFE80C11}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {215D16C3-49F3-4154-A0AF-52E8665C775C}
+	EndGlobalSection
+EndGlobal
