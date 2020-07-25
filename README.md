@@ -1,5 +1,14 @@
 # BemolDigital
-### Cadastro de Cliente
+
+Este projeto visa realizar um cadastro simples de clientes, sem controle de acesso, com a finalidade de consumir o serviço  VIACEP disponibilizado para consultar informações relacionadas ao CEP informado para consulta.
+
+## Ferramentas utilizadas
+
+- Visual Studio Community 2019
+- Visual Studio Code
+- SQL Server Express 2017
+- SSMS 2018
+
 
 # C4 Diagrams
 
