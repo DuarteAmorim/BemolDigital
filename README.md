@@ -5,7 +5,7 @@ Este projeto visa realizar um cadastro simples de clientes, sem controle de aces
 ## Ferramentas utilizadas
 
 - Visual Studio Community 2019
-- Visual Studio Code
+- Visual Studio Code (criação/Edição dos Diagramas C4)
 - SQL Server Express 2017
 - SSMS 2018
 
